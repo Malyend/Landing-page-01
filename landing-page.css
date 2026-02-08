@@ -1,4 +1,56 @@
+.roboto-font {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
 /* mobile devices: min-width="375px" */
+
+body {
+    display: flex;
+    flex-direction: column;
+
+    height: 100vh;
+    min-width: 375px;
+}
+
+/*navigation bar*/
+
+.nav-cont {
+    display: flex;
+}
+
+.nav-cont h4 {
+    flex: 1;
+    font-size: 1.3rem;
+
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+
+    justify-content: space-between;
+}
+
+li {
+    text-align: center;
+}
+
+a {
+    flex: 1;
+
+
+
+    text-decoration: none;
+    color: black;
+    
+}
 
 /* Tablet: min-width="768px"*/
 
