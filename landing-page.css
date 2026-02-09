@@ -130,10 +130,6 @@ a {
 .anim-sect {
     display: flex;
     flex-direction: column;
-
-    
-
-    display: flex;
     justify-content: flex-start;
 
     flex-wrap: wrap;
