@@ -21,75 +21,80 @@
 </head>
 <body>
     <!--Planning to have the header and Ul on separate sides of the page on the same row.-->
+   
     <nav class="nav-cont">
-        <h4>Header Logo</h4>
+        <img src="./images/biancavandijk-seeds-7869190_1280.jpg" alt="a flowery Logo">
         
         <ul>
-            <li><a href="#">header link one</a></li>
-            <li><a href="#">header link two</a></li>
-            <li><a href="#">header link three</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
         </ul>
     </nav>
 
-    <header>
+    <header class="header-cont">
          <!-- I may wrap the header, p and button together. idk what that'll do for the image-->
         <h1>This website is awesome</h1>
         <p>This website has some subtext that goes here under the main title.
             it's a smaller font and the color is lower contrast.
         </p>
         <button>Sign up</button>
-
         <!--The image element stays on the left side of the page, by itself. 
         How? flexbox. but try simple solutions first. don't over complicate it.-->
         <img src="./images/makabera-wave-7726187_1280.jpg" alt="waves in the abundant ocean"
-        height="210">
+        loading="eager">
     </header>
+    
 
-    <section>
+    <section class="anim-sect">
         <!--a bunch of images in a row. wrap them up.
         remember, to wrap something you need a parent container-->
-        <h2>Some random information</h2>
+        <h2>Facts of the day.</h2>
 
-        <figure>
-            <figcaption>images for a group of animals</figcaption>
+        <figure class="anim-img">
+            
+            <!--used Inline CSS because external wasn't doing much, Simpler.
+            Orders of the Cascade call upon thy hero. -->
+            <figcaption 
+            style="justify-content: center; align-self: center; display: flex;">images for a group of animals</figcaption>
 
             <figure>
-                <img src="./images/daniele_k-giraffe-8054174_1280.jpg" alt="It's a giraffe" height="360">
+                <img src="./images/daniele_k-giraffe-8054174_1280.jpg" alt="It's a giraffe" height="360" loading="lazy">
                 <figcaption class="group">Giraffes can reach a speed of 60km/hour at gallop over a short distance, and 50km/hour over a longer distance.</figcaption>
             </figure>
 
             <figure>
-                <img src="./images/eliyaphilip47-nature-10019029_1280.jpg" alt="an elephant" height="360">
+                <img src="./images/eliyaphilip47-nature-10019029_1280.jpg" alt="an elephant" height="360" loading="lazy">
                 <figcaption class="group"> they are actually the only mammals in the world that can't jump, and have enlarged incisor teeth that grow throughout their lives.
                  We call those teeth tusks</figcaption>
             </figure>
 
             <figure>
-                <img src="./images/roszie-animal-6997104_1280.jpg" alt="a zebra" height="360">
+                <img src="./images/roszie-animal-6997104_1280.jpg" alt="a zebra" height="360" loading="lazy">
                 <figcaption class="group">A group of Zebras is commonly called a dazzle, named for the motion dazzle effect created by a group of running zebras.
                     You dazzled yet?>
                 </figcaption>
             </figure>
 
             <figure>
-                <img src="./images/zdenet-frog-111179_1280.jpg" alt="its a frog" height="360">
+                <img src="./images/zdenet-frog-111179_1280.jpg" alt="its a frog" height="360" loading="lazy">
                 <figcaption class="group">did you know that frogs demonstrate a range of emotions, like happiness, anxiety, excitement and stress.
                      Just like humans</figcaption>
             </figure>
         </figure>
     </section>
 
-    <div>
+    <div class="quote-cont">
 
-        <blockquote cite="https://www.goodreads.com/author/quotes/656983.J_R_R_Tolkien">“I don't know half of you half as well as I should like; 
+        <blockquote cite="https://www.goWodreads.com/author/quotes/656983.J_R_R_Tolkien">“I don't know half of you half as well as I should like; 
             and I like less than half of you half as well as you deserve.”</blockquote>
-        <span>&mdash; J.R.R Tolkien, The Fellowship of the Ring</span>
+        <p class="author">&mdash; <strong>J.R.R Tolkien, The Fellowship of the Ring</strong></p>
         
     </div>
 
-    <section>
+    <section id="call-to-act">
 
-        <div>
+        <div class="call-cont">
             <h3>Call to action! it's time!</h3>
             <p>Sign up for our product by clicking that button right over there</p>
 
@@ -97,7 +102,7 @@
         </div>
     </section>
 
-    <footer>
+    <footer class="foot-cont">
 
         <p>Copyright &copy; The Odin Project 2021</p>
     </footer>
