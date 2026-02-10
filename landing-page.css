@@ -26,7 +26,7 @@ body {
 .nav-cont {
     display: flex;
 
-    font-size: 0.7rem;
+    font-size: 0.8rem;
 
     min-width: 0;
 
@@ -257,7 +257,69 @@ a {
 .foot-cont p { 
     color: #E5E7EB;
 }
+
 /* Tablet: min-width="768px"*/
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    body {
+        min-width: 768px;
+    }
+
+    /*Navigation*/
+    .nav-cont {
+        font-size: 1.2rem;
+
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    .nav-cont img{
+        height: 100px;
+    }
+
+    /*Header*/
+
+    .header-cont h1 {
+        font-size: 1.5rem;
+    }
+
+    .header-cont p {
+        font-size: 1.3rem;
+        font-weight: 300;
+    }
+
+    .header-cont button {
+        width: 30%;
+
+        padding: 1.5rem;
+        margin: 0.8rem;
+
+        font-size: 1.2rem;
+    }
+
+    .header-cont button:active {
+        background-color: #000000;
+        transform: scale(0.9);
+    }
+
+    /*Animal Section*/
+    .anim-sect h2 {
+        font-size: 1.5rem;
+    }
+
+    .anim-wrap {
+        display: flex;
+        flex-direction: row;
+
+        flex-wrap: wrap;
+    }
+}
+
+/*Desktop: min-width="1024px"*/
+
+/*Large Desktop: min-width="1440px" */
+
 
 /*Desktop: min-width="1024px"*/
 
