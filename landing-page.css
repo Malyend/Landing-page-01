@@ -308,12 +308,10 @@ a {
         font-size: 1.5rem;
     }
 
-    .anim-wrap {
-        display: flex;
-        flex-direction: row;
-
-        flex-wrap: wrap;
-    }
+   .anim-sect {
+    justify-content: center;
+    
+   }
 }
 
 /*Desktop: min-width="1024px"*/
