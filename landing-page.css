@@ -141,13 +141,6 @@ a {
     font-size: 1rem;
 }
 
-.anim-fig figcaption{
-    align-self: flex-end;
-    justify-content: center;
-
-    font-size: 0.4rem;
-}
-
 .anim-img {
     flex: 1;
 }
@@ -163,6 +156,8 @@ a {
     border-radius: 20%;
 
     box-shadow: 0 2px 2px 0;
+
+    margin: 0 0 1rem 0;
 
 }
 
@@ -243,6 +238,12 @@ a {
     width: 40%;
 }
 
+.call-cont button:active {
+    background-color: #000000;
+
+    border: none;
+}
+
 /*The Footer*/
 .foot-cont {
     
@@ -267,7 +268,7 @@ a {
 
     /*Navigation*/
     .nav-cont {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
 
         justify-content: center;
         align-items: center;
@@ -281,11 +282,11 @@ a {
     /*Header*/
 
     .header-cont h1 {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
 
     .header-cont p {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
         font-weight: 300;
     }
 
@@ -295,7 +296,7 @@ a {
         padding: 1.5rem;
         margin: 0.8rem;
 
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
 
     .header-cont button:active {
@@ -305,20 +306,59 @@ a {
 
     /*Animal Section*/
     .anim-sect h2 {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
     }
 
    .anim-sect {
     justify-content: center;
     
    }
+
+   .anim-img .group {
+    font-size: 1.5rem;
+   }
+
+   .anim-img img {
+    width: 380px;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 5rem;
+   }
 }
 
-/*Desktop: min-width="1024px"*/
+/*Quote section*/ 
 
-/*Large Desktop: min-width="1440px" */
+.quote-cont {
+    font-size: 1.3rem;
+    padding: 0.4rem;
+}
 
+/*Call to action*/
 
+.call-cont h3 {
+    font-size: 1.4rem;
+
+}
+
+.call-cont p {
+    font-size: 1.2rem;
+
+}
+
+.call-cont button{
+
+    font-size: 1.3rem;
+}
+
+/*footer*/
+
+.foot-cont {
+    font-size: 1.3rem;
+}
 /*Desktop: min-width="1024px"*/
 
 /*Large Desktop: min-width="1440px" */
