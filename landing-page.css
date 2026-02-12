@@ -90,6 +90,20 @@ a {
     color: #E5E7EB;
 }
 
+#desktop-head {
+    display: flex;
+    flex-direction: column;
+}
+
+#desk-cont {
+    display: flex;
+
+    flex-direction: column;
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
+}
 .header-cont h1 {
     font-size: 1.3rem;
     justify-content: center;
@@ -104,9 +118,10 @@ a {
     font-size: 0.9rem;
 }
 
-.header-cont button {
+.header-cont #desktop-head button {
     width: 25%;
     align-self: center;
+    justify-content: center;
 
     padding: 1rem;
     background-color: #3882F6;
@@ -326,9 +341,9 @@ a {
 
     margin-top: 2rem;
     margin-bottom: 2rem;
-    margin-left: 5rem;
+    
    }
-}
+
 
 /*Quote section*/ 
 
@@ -359,6 +374,88 @@ a {
 .foot-cont {
     font-size: 1.3rem;
 }
+}
 /*Desktop: min-width="1024px"*/
+@media screen and (min-width: 1024px) and (max-width:1440px)
+{
+    /*Navigation*/
+
+    .nav-cont {
+        font-size: 2rem;
+    }
+
+    .nav-cont ul {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-cont a {
+        padding: 0 1rem;
+    }
+
+    .nav-cont a:hover {
+        cursor: pointer;
+        text-decoration: underline;
+    }
+
+    .nav-cont img {
+        
+    height: 160px;
+    padding: 0.2rem;
+
+    }
+
+    /*Header*/
+
+    
+
+.header-cont {
+
+    flex: 1;
+    flex-direction: column;
+    background-color: #1F2937;
+    color: #E5E7EB;
+}
+
+#desktop-head {
+    display: flex;
+    flex-direction: row;
+}
+
+#desk-cont {
+    display: flex;
+
+    width: 50%;
+
+    flex-direction: column;
+    margin: 3rem;
+    padding: 1.5rem;
+
+    background-color: #435266;
+    border-radius: 20%;
+}
+.header-cont h1 {
+    font-size: 2rem;
+    justify-content: center;
+    align-self: center;
+
+    margin: 0;
+    padding: 0.4rem;
+}
+
+.header-cont p {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.header-cont button {
+   
+ font-size: 1.7rem;
+ flex: 1;
+
+ margin: 1.3rem;
+ padding: 1.5rem;
+}
+}
 
 /*Large Desktop: min-width="1440px" */
