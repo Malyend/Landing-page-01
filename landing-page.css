@@ -375,19 +375,6 @@ a {
     font-size: 1.3rem;
 }
 }
-/*Screen gaps*/
-@media screen and (min-width: 1024px) and (max-width:1176px)
-{
-.img {
-    width: 150px;
-}
-}
-
-@media screen and (min-width: 1176px) and (max-width: 1440px) {
-    .img {
-        width: 250px;
-    }
-}
 /*Desktop: min-width="1024px"*/
 @media screen and (min-width: 1024px) and (max-width:1440px)
 {
@@ -513,7 +500,10 @@ a {
     
 }
 
+.anim-img img {
+    width: 100%;
 
+}
 
 /*Quote Section*/
 .quote-cont {
@@ -595,3 +585,48 @@ a {
 }
 
 /*Large Desktop: min-width="1440px" */
+@media screen and (min-width: 1440px) {
+    
+    /*Navigation Section*/ 
+
+    .nav-cont {
+    display: flex;
+
+    font-size: 1.6rem;
+
+    min-width: 0;
+
+    background-color: #1F2937;
+
+    
+}
+
+.nav-cont img {
+    flex: 0 0 auto;
+
+    
+    border-radius: 40%;
+    height: 150px;
+    padding: 0.2rem;
+
+}
+
+ul {
+    align-items: center;
+
+}
+
+li {
+    padding: 0.3rem;
+}
+
+a:active {
+    color: #3882F6;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/*Header Section*/
+
+}
